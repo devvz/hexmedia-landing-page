@@ -20,12 +20,6 @@
     </style>
   </head>
   <body>
-    <script src="https://unpkg.com/hls.js/dist/hls.min.js"></script>
-    <video playsinline autoplay muted loop id="cover-video"></video>
-    <script>
-      var hls = new Hls();
-      hls.loadSource("https://github.com/devvz/hexmedia-landing-page/raw/main/hex-animation_VP8.webm");
-      hls.attachMedia(document.getElementById("cover-video"));
-    </script>
+    <iframe id="video" src="https://player.vimeo.com/video/694076952?background=1&autoplay=1&loop=1&byline=0&title=0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay; fullscreen"></iframe>
   </body>
 </html>
