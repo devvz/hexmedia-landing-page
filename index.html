@@ -20,6 +20,10 @@
     </style>
   </head>
   <body>
-    <iframe id="video" src="https://player.vimeo.com/video/694076952?background=1&autoplay=1&loop=1&byline=0&title=0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay; fullscreen"></iframe>
+    <script>
+      var hls = new Hls();
+      hls.loadSource("https://storage.googleapis.com/cloudinary-hexmedia/hex-animation_H.264.mp4");
+      hls.attachMedia(document.getElementById("cover-video"));
+    </script>
   </body>
 </html>
